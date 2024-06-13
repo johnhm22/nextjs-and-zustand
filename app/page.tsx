@@ -1,11 +1,11 @@
-import Image from 'next/image'
+import Columns from '@/components/columns';
 
 export default function Home() {
   return (
-    <section className='py-24'>
+    <section className=' bg-gray-600 py-24'>
       <div className='container'>
-        <h1 className='text-3xl font-bold'>NextJS Starter Template</h1>
+        <Columns />
       </div>
     </section>
-  )
+  );
 }
