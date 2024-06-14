@@ -27,10 +27,9 @@ export const NewTodoDialog = () => {
     const { title, description } = Object.fromEntries(formData);
     if (typeof title !== 'string' || typeof description !== 'string') return;
     //here we invoke the addTask function that was returned from the Zustand store
+
     addTask(title, description);
   };
-
-  const dialogRef = useRef<HTMLDialogElement | null>(null);
 
   return (
     <Dialog>
